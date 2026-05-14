@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup | Nova Beauty</title>
+    <link rel="icon" href="Media\Logos\BeautyWallah Logo.png">
+    <link rel="stylesheet" href="../CSS/Skincare_style.css">
+    <link rel="stylesheet" href="../CSS\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Story+Script&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <input type="checkbox" id="checkbox">
+        <label class="toggle" for="checkbox">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </label>
+        <div class="slide">
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-home"></i>Home</a></li>
+                <li><a href="Contact.html"><i class="fa-solid fa-envelope"></i>Contact Us</a></li>
+                <li><a href="index.html#categories-section"><i class="fa-solid fa-list"></i>Categories</a></li>
+                <li><a href="About.html"><i class="fa-solid fa-circle-info"></i>About</a></li>
+                <li><a href="Review.html"><i class="fa-solid fa-star"></i>Review</a></li>
+            </ul>
+        </div>
+
+
+        <div class="bn">
+            <a href="index.html">
+                <img src="../Media\Logos\TextOnly.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="icon">
+            <label for="search-toggle" style="cursor: pointer;">
+                <i class="fa-solid fa-magnifying-glass" style="color: rgb(5, 51, 86);"></i>
+            </label>
+            <a href="Login.html"><i class="fa-solid fa-user" style="color: rgb(5, 51, 86);"></i></a>
+            <a href="cart.html" style="position: relative; display: inline-block; margin-right: 15px;">
+                <i class="fa-solid fa-cart-shopping" style="color: rgb(5, 51, 86);"></i>
+                <span id="cart-badge" style="position: absolute; top: -2px; right: -4px; background: rgb(241, 115, 136); color: white; border-radius: 50%; padding: 2px 6px; font-size: 10px; display: none;">0</span>
+            </a>
+            <a href="Wishlist.html"><i class="fa-solid fa-heart" style="color: rgb(245, 0, 0);"></i></a>
+        </div>
+    </header>
+    <input type="checkbox" id="search-toggle" class="search-checkbox">
+
+    <div class="search-overlay">
+        <label for="search-toggle" class="close-search">
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for makeup, skincare, deals...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+
+
+    <aside class="box">
+        <div class="main-slider-wrapper">
+
+            <input type="radio" name="main-slider" id="main-1">
+            <input type="radio" name="main-slider" id="main-2">
+            <input type="radio" name="main-slider" id="main-3">
+
+            <div class="main-slide main-img-1 relative-slide">
+                <img src="../Media\makeup\banner5.jpeg" alt="Beauty Banner 1" class="main-slider-img">
+                <label for="main-3" class="prev-arrow">&#10094;</label>
+                <label for="main-2" class="next-arrow">&#10095;</label>
+            </div>
+
+            <div class="main-slide main-img-2">
+                <img src="../Media\makeup\banner2.jpg" alt="Beauty Banner 2" class="main-slider-img">
+                <label for="main-1" class="prev-arrow">&#10094;</label>
+                <label for="main-3" class="next-arrow">&#10095;</label>
+            </div>
+
+            <div class="main-slide main-img-3">
+                <img src="../Media\makeup\m8.webp" alt="Beauty Banner 3" class="main-slider-img">
+                <label for="main-2" class="prev-arrow">&#10094;</label>
+                <label for="main-1" class="next-arrow">&#10095;</label>
+            </div>
+
+        </div>
+    </aside>
+
+
+    <section class="products-page-section">
+
+        <div class="products-header">
+            <h2>MAKEUP COLLECTION</h2>
+        </div>
+
+        <div class="products-grid">
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=17">
+                        <img src="../Media\makeup\Dior Lipstick (Peach).jpg" alt="Product 1">
+                    </a>
+                </div>
+                <h3>Addict Shine 90% Natural Origin Refillable Lipstick</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 4,700.00 <del>Rs. 8,700.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Addict Shine Refillable Lipstick', 4700, '../Media/makeup/Dior Lipstick (Peach).jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Addict Shine Refillable Lipstick', 4700, '../Media/makeup/Dior Lipstick (Peach).jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=18">
+                        <img src="../Media\makeup\Facescanada EyelIner.jpeg" alt="Product 2">
+                    </a>
+                </div>
+                <h3>FACES CANADA Magneteyes Eyeliner - Black, 3.5m</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">Rs. 179.00 <del>Rs. 499.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'FACES CANADA Magneteyes Eyeliner', 179, '../Media/makeup/Facescanada EyelIner.jpeg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('FACES CANADA Magneteyes Eyeliner', 179, '../Media/makeup/Facescanada EyelIner.jpeg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=19">
+                        <img src="../Media\makeup\Lakme Cream Blush.jpg" alt="Product 3">
+                    </a>
+                </div>
+                <h3>Lakmē 9 to 5 Powerplay Velvet Crème Blush</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 455.00 <del>Rs. 650.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Lakmē 9 to 5 Velvet Crème Blush', 455, '../Media/makeup/Lakme Cream Blush.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Lakmē 9 to 5 Velvet Crème Blush', 455, '../Media/makeup/Lakme Cream Blush.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=20">
+                        <img src="../Media\makeup\Insight Cheek tint Blush.png" alt="Product 4">
+                    </a>
+                </div>
+                <h3>Insight Cosmetics Cheek Tint Blush With Avacado Oil</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">Rs. 130.00 <del>Rs. 155.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Insight Cosmetics Cheek Tint Blush', 130, '../Media/makeup/Insight Cheek tint Blush.png')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Insight Cosmetics Cheek Tint Blush', 130, '../Media/makeup/Insight Cheek tint Blush.png')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=21">
+                        <img src="../Media\makeup\Lakme Blush.jpeg" alt="Product 5">
+                    </a>
+                </div>
+                <h3>Lakme Face It Blush Flushed Pink B2 4gm</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 165.00 <del>Rs. 250.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Lakme Face It Blush Flushed Pink', 165, '../Media/makeup/Lakme Blush.jpeg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Lakme Face It Blush Flushed Pink', 165, '../Media/makeup/Lakme Blush.jpeg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=22">
+                        <img src="../Media\makeup\Maybelline Lash Mascara.jpg" alt="Product 6">
+                    </a>
+                </div>
+                <h3>Maybelline New York Lash Washable Mascara,Very Black</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 2,475.00 <del>Rs. 2,750.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Maybelline Lash Sensational Mascara', 2475, '../Media/makeup/Maybelline Lash Mascara.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Maybelline Lash Sensational Mascara', 2475, '../Media/makeup/Maybelline Lash Mascara.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=23">
+                        <img src="../Media\makeup\Revlon Powdered Blush.jpg" alt="Product 7">
+                    </a>
+                </div>
+                <h3>Revlon Powder Blush, Tickled Pink</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 1,175.00 <del>Rs. 5,150.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Revlon Powder Blush, Tickled Pink', 1175, '../Media/makeup/Revlon Powdered Blush.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Revlon Powder Blush, Tickled Pink', 1175, '../Media/makeup/Revlon Powdered Blush.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=24">
+                        <img src="../Media\makeup\Swiss Beauty Cream Blush.jpg" alt="Product 8">
+                    </a>
+                </div>
+                <h3>Swiss Beauty Cream It Up Blush with Shea Butter 10g</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 239.00 <del>Rs. 400.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Swiss Beauty Cream It Up Blush', 239, '../Media/makeup/Swiss Beauty Cream Blush.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Swiss Beauty Cream It Up Blush', 239, '../Media/makeup/Swiss Beauty Cream Blush.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=25">
+                        <img src="../Media\makeup\Dior Faundation.jpeg" alt="Product 9">
+                    </a>
+                </div>
+                <h3>Dior Forever Skin Glow 24H Radiant Foundation SPF 20</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 5,015.00 <del>Rs. 5,700.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Dior Forever Skin Glow Radiant Foundation', 5015, '../Media/makeup/Dior Faundation.jpeg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Dior Forever Skin Glow Radiant Foundation', 5015, '../Media/makeup/Dior Faundation.jpeg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=26">
+                        <img src="../Media\makeup\Renee Mascara.jpg" alt="Product 10">
+                    </a>
+                </div>
+                <h3>RENEE Volumax Mascara Black 10ml Long Lasting Weightless</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 385.00 <del>Rs. 450.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'RENEE Volumax Mascara Black', 385, '../Media/makeup/Renee Mascara.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('RENEE Volumax Mascara Black', 385, '../Media/makeup/Renee Mascara.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=27">
+                        <img src="../Media\makeup\Chanel Lipstick (Pink).jpg" alt="Product 11">
+                    </a>
+                </div>
+                <h3>CHANEL Rouge Coco Ultra Hydrating Lip Colour 2g</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 6,650.00 <del>Rs. 7,599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'CHANEL Rouge Coco Ultra Hydrating Lip Colour', 6650, '../Media/makeup/Chanel Lipstick (Pink).jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('CHANEL Rouge Coco Ultra Hydrating Lip Colour', 6650, '../Media/makeup/Chanel Lipstick (Pink).jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=28">
+                        <img src="../Media\makeup\Dior Lipstick.png" alt="Product 12">
+                    </a>
+                </div>
+                <h3>DIOR Addict 24H Hydration Plumping Gloss Lip (6ml)</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 4,300.00 <del>Rs. 4,599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'DIOR Addict Plumping Gloss Lip Maxim', 4300, '../Media/makeup/Dior Lipstick.png')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('DIOR Addict Plumping Gloss Lip Maxim', 4300, '../Media/makeup/Dior Lipstick.png')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=29">
+                        <img src="../Media\makeup\Elf Concealer.jpg" alt="Product 13">
+                    </a>
+                </div>
+                <h3>e.l.f. 16HR Camo Liquid Concealer (6mL)</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 899.00 <del>Rs. 1,199.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'e.l.f. 16HR Camo Liquid Concealer', 899, '../Media/makeup/Elf Concealer.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('e.l.f. 16HR Camo Liquid Concealer', 899, '../Media/makeup/Elf Concealer.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=30">
+                        <img src="../Media\makeup\Dior Faudation (Shade).png" alt="Product 14">
+                    </a>
+                </div>
+                <h3>DIOR FOREVER SKIN GLOW FOUNDATION (30ML)--2N</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 6,100.00 <del>Rs. 6,800.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'DIOR FOREVER SKIN GLOW FOUNDATION', 6100, '../Media/makeup/Dior Faudation (Shade).png')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('DIOR FOREVER SKIN GLOW FOUNDATION', 6100, '../Media/makeup/Dior Faudation (Shade).png')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=31">
+                        <img src="../Media\makeup\MARS Eyeshadow Palette.jpg" alt="Product 15">
+                    </a>
+                </div>
+                <h3>MARS Dance Of Joy Eyeshadow Palette - 2 (13.2 g)</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 269.00 <del>Rs. 299.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'MARS Dance Of Joy Eyeshadow Palette', 269, '../Media/makeup/MARS Eyeshadow Palette.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('MARS Dance Of Joy Eyeshadow Palette', 269, '../Media/makeup/MARS Eyeshadow Palette.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=32">
+                        <img src="../Media\makeup\Facescanada Starryy Eye (Eye Shadow).jpg" alt="Product 16">
+                    </a>
+                </div>
+                <h3>FACES CANADA Starry Eyes Eye Shadow Palette-16g</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 549.00 <del>Rs. 999.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'FACES CANADA Starry Eyes Eye Shadow Palette', 549, '../Media/makeup/Facescanada Starryy Eye (Eye Shadow).jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('FACES CANADA Starry Eyes Eye Shadow Palette', 549, '../Media/makeup/Facescanada Starryy Eye (Eye Shadow).jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h4>ABOUT US</h4>
+                <p>Nova Beauty is your ultimate destination for all things skincare, makeup, and fragrance. Discover your glow today!</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>CONTACT US</h4>
+                <p>+012(6372)823134</p>
+                <p>novabeauty@gmail.com</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>SOCIAL MEDIA</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook" style="color: #3b5998;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram" style="color: #e1306c;"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter" style="color: #1da1f2;"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="../Java/Cart.js"></script>
+</body>
+
+</html>

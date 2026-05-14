@@ -1,0 +1,114 @@
+.about-header-section {
+    background-color: #fdfafb;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.about-header-section h2 {
+    font-family: 'Modern Antiqua', serif;
+    font-size: 3rem;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.about-header-section p {
+    color: #555;
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.about-content-section {
+    padding: 60px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h3 {
+    font-family: 'Modern Antiqua', serif;
+    font-size: 2.2rem;
+    color: rgb(141, 87, 141);
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-family: Arial, sans-serif;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.values-section {
+    background-color: rgb(248, 221, 226);
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.values-section h3 {
+    font-family: 'Modern Antiqua', serif;
+    font-size: 2.5rem;
+    color: #111;
+    margin-bottom: 50px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-card {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+}
+
+.value-icon {
+    font-size: 3rem;
+    color: rgb(241, 115, 136);
+    margin-bottom: 20px;
+}
+
+.value-card h4 {
+    font-family: Arial, sans-serif;
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    font-family: Arial, sans-serif;
+    color: #777;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}

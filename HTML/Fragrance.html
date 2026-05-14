@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRAGRANCES | Nova Beauty</title>
+    <link rel="icon" href="Media\Logos\BeautyWallah Logo.png">
+    <link rel="stylesheet" href="../CSS/Skincare_style.css">
+    <link rel="stylesheet" href="../CSS\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Story+Script&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <input type="checkbox" id="checkbox">
+        <label class="toggle" for="checkbox">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </label>
+        <div class="slide">
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-home"></i>Home</a></li>
+                <li><a href="Contact.html"><i class="fa-solid fa-envelope"></i>Contact Us</a></li>
+                <li><a href="index.html#categories-section"><i class="fa-solid fa-list"></i>Categories</a></li>
+                <li><a href="About.html"><i class="fa-solid fa-circle-info"></i>About</a></li>
+                <li><a href="Review.html"><i class="fa-solid fa-star"></i>Review</a></li>
+            </ul>
+        </div>
+
+
+        <div class="bn">
+            <a href="index.html">
+                <img src="../Media\Logos\TextOnly.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="icon">
+            <label for="search-toggle" style="cursor: pointer;">
+                <i class="fa-solid fa-magnifying-glass" style="color: rgb(5, 51, 86);"></i>
+            </label>
+            <a href="Login.html"><i class="fa-solid fa-user" style="color: rgb(5, 51, 86);"></i></a>
+            <a href="cart.html" style="position: relative; display: inline-block; margin-right: 15px;">
+                <i class="fa-solid fa-cart-shopping" style="color: rgb(5, 51, 86);"></i>
+                <span id="cart-badge" style="position: absolute; top: -2px; right: -4px; background: rgb(241, 115, 136); color: white; border-radius: 50%; padding: 2px 6px; font-size: 10px; display: none;">0</span>
+            </a>
+            <a href="Wishlist.html"><i class="fa-solid fa-heart" style="color: rgb(245, 0, 0);"></i></a>
+        </div>
+    </header>
+    <input type="checkbox" id="search-toggle" class="search-checkbox">
+
+    <div class="search-overlay">
+        <label for="search-toggle" class="close-search">
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for makeup, skincare, deals...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+
+
+    <aside class="box">
+        <div class="main-slider-wrapper">
+
+            <input type="radio" name="main-slider" id="main-1">
+            <input type="radio" name="main-slider" id="main-2">
+            <input type="radio" name="main-slider" id="main-3">
+
+            <div class="main-slide main-img-1 relative-slide">
+                <img src="../Media\perfume\diorbanner.jpg" alt="Beauty Banner 1" class="main-slider-img">
+                <label for="main-3" class="prev-arrow">&#10094;</label>
+                <label for="main-2" class="next-arrow">&#10095;</label>
+            </div>
+
+            <div class="main-slide main-img-2">
+                <img src="../Media\perfume\Chanelbanner2.png" alt="Beauty Banner 2" class="main-slider-img">
+                <label for="main-1" class="prev-arrow">&#10094;</label>
+                <label for="main-3" class="next-arrow">&#10095;</label>
+            </div>
+
+            <div class="main-slide main-img-3">
+                <img src="../Media\perfume\perfumebanner.png" alt="Beauty Banner 3" class="main-slider-img">
+                <label for="main-2" class="prev-arrow">&#10094;</label>
+                <label for="main-1" class="next-arrow">&#10095;</label>
+            </div>
+
+        </div>
+    </aside>
+
+
+    <section class="products-page-section">
+
+        <div class="products-header">
+            <h2>FRAGRANCES COLLECTION</h2>
+        </div>
+
+        <div class="products-grid">
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=37">
+                        <img src="../Media\perfume\Bellavita.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <h3>BELLAVITA Date Perfum Red Fruits Eau de Parfum -100 ml<h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 950.00 <del>Rs. 1,599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'BELLAVITA Date Perfum', 950, '../Media/perfume/Bellavita.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('BELLAVITA Date Perfum', 950, '../Media/perfume/Bellavita.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=38">
+                        <img src="../Media\perfume\Miss dior.png" alt="Product 2">
+                    </a>
+                </div>
+                <h3>Miss Dior Eau de Parfum - 100ml India</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">Rs. 13,926.00 <del>Rs. 15,299.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Miss Dior Eau de Parfum', 13926, '../Media/perfume/Miss dior.png')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Miss Dior Eau de Parfum', 13926, '../Media/perfume/Miss dior.png')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=39">
+                        <img src="../Media\perfume\Chance chanel pink.jpg" alt="Product 3">
+                    </a>
+                </div>
+                <h3>Chance Eau Tendre EDP - Chanel - 100ml India</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 18,299.00 <del>Rs. 20,898.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Chance Eau Tendre EDP - Chanel', 18299, '../Media/perfume/Chance chanel pink.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Chance Eau Tendre EDP - Chanel', 18299, '../Media/perfume/Chance chanel pink.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=40">
+                        <img src="../Media\perfume\Guess bellavita.jpg" alt="Product 4">
+                    </a>
+                </div>
+                <h3>GUESS Bella Vita Paradiso Liquid Eau De Parfum-100ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">Rs. 4,875.00 <del>Rs. 7,198.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'GUESS Bella Vita Paradiso', 4875, '../Media/perfume/Guess bellavita.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('GUESS Bella Vita Paradiso', 4875, '../Media/perfume/Guess bellavita.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=41">
+                        <img src="../Media\perfume\Pure elegance.jpg" alt="Product 5">
+                    </a>
+                </div>
+                <h3>Pure Elegance Pour Femme Eau De Parfum 100ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 4,500.00 <del>Rs. 5,599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Pure Elegance Pour Femme', 4500, '../Media/perfume/Pure elegance.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Pure Elegance Pour Femme', 4500, '../Media/perfume/Pure elegance.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=42">
+                        <img src="../Media\perfume\Lin parfum fass.jpg" alt="Product 6">
+                    </a>
+                </div>
+                <h3>Lin parfum fass 100ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 950.00 <del>Rs. 1,599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Lin parfum fass', 950, '../Media/perfume/Lin parfum fass.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Lin parfum fass', 950, '../Media/perfume/Lin parfum fass.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=43">
+                        <img src="../Media\perfume\Joy dior.jpg" alt="Product 7">
+                    </a>
+                </div>
+                <h3>Joy by Dior Eau de Parfum - 90ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 13,926.00<del>Rs. 15,000.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Joy by Dior Eau de Parfum', 13926, '../Media/perfume/Joy dior.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Joy by Dior Eau de Parfum', 13926, '../Media/perfume/Joy dior.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=44">
+                        <img src="../Media\perfume\Your touch.jpg" alt="Product 8">
+                    </a>
+                </div>
+                <h3>Your Touch (Femme)|Eau De Parfum 100ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 5,430.00 <del>Rs. 6,000.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Your Touch (Femme)', 5430, '../Media/perfume/Your touch.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Your Touch (Femme)', 5430, '../Media/perfume/Your touch.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=45">
+                        <img src="../Media\perfume\Swiss beauty.jpg" alt="Product 9">
+                    </a>
+                </div>
+                <h3>Swiss Beauty Wild Flower EDP Long-Lasting 50ml </h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 850.00 <del>Rs.999.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Swiss Beauty Wild Flower EDP', 850, '../Media/perfume/Swiss beauty.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Swiss Beauty Wild Flower EDP', 850, '../Media/perfume/Swiss beauty.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=46">
+                        <img src="../Media\perfume\Cashmere.jpg" alt="Product 10">
+                    </a>
+                </div>
+                <h3>Cashmere 100ml Perfume</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 2,450.00 <del>Rs. 3,599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Cashmere 100ml Perfume', 2450, '../Media/perfume/Cashmere.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Cashmere 100ml Perfume', 2450, '../Media/perfume/Cashmere.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=47">
+                        <img src="../Media\perfume\Floral by AL .jpg" alt="Product 11">
+                    </a>
+                </div>
+                <h3>Arabian Aroma Flora Perfume Long Lasting Perfume -50 ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 1,950.00 <del>Rs. 2,599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Arabian Aroma Flora Perfume', 1950, '../Media/perfume/Floral by AL .jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Arabian Aroma Flora Perfume', 1950, '../Media/perfume/Floral by AL .jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=48">
+                        <img src="../Media\perfume\Forever.jpg" alt="Product 12">
+                    </a>
+                </div>
+                <h3>Forever Edp 60ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 9,149.00 <del>Rs. 10,599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Forever Edp 60ml', 9149, '../Media/perfume/Forever.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Forever Edp 60ml', 9149, '../Media/perfume/Forever.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=49">
+                        <img src="../Media\perfume\Houhe.jpg" alt="Product 13">
+                    </a>
+                </div>
+                <h3>Houhe Lasting Perfume 50ml </h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 1,650.00 <del>Rs. 2,199.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Houhe Lasting Perfume 50ml', 1650, '../Media/perfume/Houhe.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Houhe Lasting Perfume 50ml', 1650, '../Media/perfume/Houhe.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=50">
+                        <img src="../Media\perfume\Elie saab.jpg" alt="Product 14">
+                    </a>
+                </div>
+                <h3>Le Parfum Rose Couture By Elie Saab EDT Perfum</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 8,000.00 <del>Rs. 9,199.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Le Parfum Rose Couture By Elie Saab', 8000, '../Media/perfume/Elie saab.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Le Parfum Rose Couture By Elie Saab', 8000, '../Media/perfume/Elie saab.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=51">
+                        <img src="../Media\perfume\Guess los Angeles.jpg" alt="Product 15">
+                    </a>
+                </div>
+                <h3>GUESS 1981 Los Angeles for Women Eau de Toilette</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 6,350.00 <del>Rs. 7,000.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'GUESS 1981 Los Angeles', 6350, '../Media/perfume/Guess los Angeles.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('GUESS 1981 Los Angeles', 6350, '../Media/perfume/Guess los Angeles.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=52">
+                        <img src="../Media\perfume\images (29).jpeg" alt="Product 16">
+                    </a>
+                </div>
+                <h3>CHANEL COCO Mademoiselle Intense EDP - 200ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 60,999.00 <del>Rs. 62,599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'CHANEL COCO Mademoiselle Intense', 60999, '../Media/perfume/images (29).jpeg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('CHANEL COCO Mademoiselle Intense', 60999, '../Media/perfume/images (29).jpeg')">ORDER NOW</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h4>ABOUT US</h4>
+                <p>Nova Beauty is your ultimate destination for all things skincare, makeup, and fragrance. Discover your glow today!</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>CONTACT US</h4>
+                <p>+012(6372)823134</p>
+                <p>novabeauty@gmail.com</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>SOCIAL MEDIA</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook" style="color: #3b5998;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram" style="color: #e1306c;"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter" style="color: #1da1f2;"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="../Java/Cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Nova Beauty</title>
+    <link rel="icon" href="../Media\Logos\Nova Beauty(Solid).png">
+    <link rel="stylesheet" href="../CSS\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Story+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <input type="checkbox" id="checkbox">
+        <label class="toggle" for="checkbox">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </label>
+        <div class="slide">
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-home"></i>Home</a></li>
+                <li><a href="Contact.html"><i class="fa-solid fa-envelope"></i>Contact Us</a></li>
+                <li><a href="#categories-section"><i class="fa-solid fa-list"></i>Categories</a></li>
+                <li><a href="About.html"><i class="fa-solid fa-circle-info"></i>About</a></li>
+                <li><a href="Review.html"><i class="fa-solid fa-star"></i>Review</a></li>
+            </ul>
+        </div>
+
+        <div class="bn">
+            <a href="index.html">
+                <img src="../Media\Logos\TextOnly.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="icon">
+            <label for="search-toggle" style="cursor: pointer;">
+                <i class="fa-solid fa-magnifying-glass" style="color: rgb(5, 51, 86);"></i>
+            </label>
+            <a href="Login.html"><i class="fa-solid fa-user" style="color: rgb(5, 51, 86);"></i></a>
+            <a href="cart.html" style="position: relative; display: inline-block; margin-right: 15px;">
+                <i class="fa-solid fa-cart-shopping" style="color: rgb(5, 51, 86);"></i>
+                <span id="cart-badge" style="position: absolute; top: -2px; right: -4px; background: rgb(241, 115, 136); color: white; border-radius: 50%;
+                 padding: 2px 6px; font-size: 10px; display: none;">0</span>
+            </a>
+            <a href="Wishlist.html"><i class="fa-solid fa-heart" style="color: rgb(245, 0, 0);"></i></a>
+        </div>
+    </header>
+    <input type="checkbox" id="search-toggle" class="search-checkbox">
+
+
+
+    <div class="search-overlay">
+        <label for="search-toggle" class="close-search">
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for makeup, skincare, deals...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+
+
+
+    <aside class="box">
+        <div class="main-slider-wrapper">
+
+            <input type="radio" name="main-slider" id="main-1">
+            <input type="radio" name="main-slider" id="main-2">
+            <input type="radio" name="main-slider" id="main-3">
+
+            <div class="main-slide main-img-1 relative-slide">
+                <img src="../Media\Banner\banner2.webp" alt="Beauty Banner 1" class="main-slider-img">
+                <label for="main-3" class="prev-arrow">&#10094;</label>
+                <label for="main-2" class="next-arrow">&#10095;</label>
+            </div>
+
+            <div class="main-slide main-img-2">
+                 <video src="../Media\video-1.mp4" autoplay loop muted id="video"></video>
+                <label for="main-1" class="prev-arrow">&#10094;</label>
+                <label for="main-3" class="next-arrow">&#10095;</label>
+            </div>
+
+            <div class="main-slide main-img-3">
+                <img src="../Media\Banner\banner4.webp" alt="Beauty Banner 3" class="main-slider-img">
+                <label for="main-2" class="prev-arrow">&#10094;</label>
+                <label for="main-1" class="next-arrow">&#10095;</label>
+            </div>
+
+        </div>
+    </aside>
+
+
+
+    <div class="carousal">
+
+        <div class="group">
+            <div class="card"><img src="../Media\Logos\Lakme logo.png" alt="Lakme Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\BlueHeaven Logo.png" alt="BlueHeaven Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Vegan Logo.png" alt="Vegan Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Maybelline Logo.png" alt="Maybelline Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Dior Logo.png" alt="Dior Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\SUGAR Logo.png" alt="Sugar Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Chanel Logo.png" alt="Chanel Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Loreal logo.png" alt="Loreal Logo" class="card1"></div>
+
+            <div class="card"><img src="../Media\Logos\Lakme logo.png" alt="Lakme Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\BlueHeaven Logo.png" alt="BlueHeaven Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Vegan Logo.png" alt="Vegan Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Maybelline Logo.png" alt="Maybelline Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Dior Logo.png" alt="Dior Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\SUGAR Logo.png" alt="Sugar Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Chanel Logo.png" alt="Chanel Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Loreal logo.png" alt="Loreal Logo" class="card1"></div>
+        </div>
+
+        <div aria-hidden="true" class="group">
+            <div class="card"><img src="../Media\Logos\Lakme logo.png" alt="Lakme Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\BlueHeaven Logo.png" alt="BlueHeaven Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Vegan Logo.png" alt="Vegan Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Maybelline Logo.png" alt="Maybelline Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Dior Logo.png" alt="Dior Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\SUGAR Logo.png" alt="Sugar Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Chanel Logo.png" alt="Chanel Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Loreal logo.png" alt="Loreal Logo" class="card1"></div>
+
+            <div class="card"><img src="../Media\Logos\Lakme logo.png" alt="Lakme Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\BlueHeaven Logo.png" alt="BlueHeaven Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Vegan Logo.png" alt="Vegan Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Maybelline Logo.png" alt="Maybelline Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Dior Logo.png" alt="Dior Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\SUGAR Logo.png" alt="Sugar Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Chanel Logo.png" alt="Chanel Logo" class="card1"></div>
+            <div class="card"><img src="../Media\Logos\Loreal logo.png" alt="Loreal Logo" class="card1"></div>
+        </div>
+
+    </div>
+
+
+
+    <section class="deals-layout">
+
+        <div class="static-deals">
+            <div class="deal-circle">
+                <img src="../Media\Best Sellers.png" alt="Hot Deals" id="img1">
+            </div>
+            <div class="deal-circle">
+                <img src="../Media\Hot Deals.png" alt="New Arrival">
+            </div>
+            <div class="deal-circle">
+                <img src="../Media\New Arrivals.png" alt="Lowest Price" id="img2">
+            </div>
+            <div class="deal-circle">
+                <img src="../Media\Special Offer.webp" alt="Lowest Price" id="img3">
+            </div>
+        </div>
+
+        <div class="scrolling-products-box">
+            <div class="product-track">
+
+                <div class="product-group">
+                    <div class="product-circle"><img src="../Media\Compact_Pink.webp" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Mascara.jpg" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Lipstick.webp" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Mascara.webp" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Setting Spray.webp" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Face Powder.jpg" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Compact_Pink.webp" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Mascara.jpg" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Lipstick.webp" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Mascara.webp" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Setting Spray.webp" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Face Powder.jpg" alt="Product"></div>
+                </div>
+
+                <div class="product-group" aria-hidden="true">
+                    <div class="product-circle"><img src="../Media\Compact_Pink.webp" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Mascara.jpg" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Lipstick.webp" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Mascara.webp" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Setting Spray.webp" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Face Powder.jpg" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Compact_Pink.webp" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Mascara.jpg" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Lipstick.webp" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Mascara.webp" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Setting Spray.webp" alt="Product"></div>
+                    <div class="product-circle"><img src="../Media\Face Powder.jpg" alt="Product"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="categories-section" id="categories-section">
+
+        <div class="categories-header">
+            <h2>CATEGORIES SECTION</h2>
+        </div>
+
+        <div class="categories-container">
+
+            <div class="category-card">
+                <h3>SKIN CARE</h3>
+                <div class="category-img-box">
+                    <a href="Skincare.html"><img src="../Media\Catagory Section\Skincare.jpeg" alt="Skincare"></a>
+                </div>
+                <p class="category-desc">Trending brands<br>Min. 70% off</p>
+                <a href="Skincare.html" class="shop-btn">Shop Now</a>
+            </div>
+
+            <div class="category-card">
+                <h3>MAKEUP</h3>
+                <div class="category-img-box">
+                    <a href="Makeup.html"><img src="../Media\Catagory Section\Makeup.jpeg" alt="Makeup"></a>
+                </div>
+                <p class="category-desc">Best Deals<br>Up to 30% off</p>
+                <a href="Makeup.html" class="shop-btn">Shop Now</a>
+            </div>
+
+            <div class="category-card">
+                <h3>HAIR CARE</h3>
+                <div class="category-img-box">
+                    <a href="Haircare.html"><img src="../Media\Catagory Section\Haircare.jpeg" alt="Haircare"></a>
+                </div>
+                <p class="category-desc">Haircare essentials!<br>From Rs.1500</p>
+                <a href="Haircare.html" class="shop-btn">Shop Now</a>
+            </div>
+
+            <div class="category-card">
+                <h3>FRAGRANCES</h3>
+                <div class="category-img-box">
+                    <a href="Fragrance.html"><img src="../Media\Catagory Section\Fragrances.jpeg" alt="Fragrances"></a>
+                </div>
+                <p class="category-desc">bestsellers!<br>Up to 20% off</p>
+                <a href="Fragrance.html" class="shop-btn">Shop Now</a>
+            </div>
+
+            <div class="category-card">
+                <h3>BODY CARE</h3>
+                <div class="category-img-box">
+                    <a href="Bodycare.html"><img src="../Media\Catagory Section\Bodycare.jpeg" alt="Bodycare"></a>
+                </div>
+                <p class="category-desc">Trending!<br>Up to 40% off</p>
+                <a href="Bodycare.html" class="shop-btn">Shop Now</a>
+            </div>
+
+            <div class="category-card">
+                <h3>COMBOS</h3>
+                <div class="category-img-box">
+                    <a href="Combos.html"><img src="../Media\Catagory Section\combo05.jpeg" alt="Combos"></a>
+                </div>
+                <p class="category-desc">Hot Deals!<br>Up to 60% off</p>
+                <a href="Combos.html" class="shop-btn">Shop Now</a>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <section class="promo-banner-section">
+        <div class="css-fader">
+
+            <input type="radio" name="promo-slider" id="promo-1">
+            <input type="radio" name="promo-slider" id="promo-2">
+            <input type="radio" name="promo-slider" id="promo-3">
+
+            <div class="banner-images">
+                <img src="../Media\Ad Banner\Banner899.webp" alt="Promo Deal 1" class="fade-img img-1">
+                <img src="../Media\Ad Banner\Banner1299.webp" alt="Promo Deal 2" class="fade-img img-2">
+                <img src="../Media\Ad Banner\Banner1699.webp" alt="Promo Deal 3" class="fade-img img-3">
+            </div>
+
+            <div class="slider-dots">
+                <label for="promo-1" class="dot dot-1"></label>
+                <label for="promo-2" class="dot dot-2"></label>
+                <label for="promo-3" class="dot dot-3"></label>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="categories-section">
+
+        <div class="categories-header">
+            <h2>BEST SELLERS</h2>
+        </div>
+
+        <div class="categories-container">
+
+            <div class="category-card">
+                <h3>MY GLOW TINTED MOISTURIZER</h3>
+                <div class="category-img-box">
+                    <a href="product.html?id=33">
+                        <img src="../Media\Best Seller Section\My Glow tinted moisturizer.jpeg" alt="Best Seller 1">
+                    </a>
+                </div>
+                <p class="category-desc">Trending brands<br>@15% off<br><b>Rs.599.00</b></p>
+                <a href="product.html?id=33" class="shop-btn">Shop Now</a>
+            </div>
+
+            <div class="category-card">
+                <h3>MAC <br>LIPSTICKS</h3>
+                <div class="category-img-box">
+                    <a href="product.html?id=34">
+                        <img src="../Media\Best Seller Section\MAC LIPSTICK.jpeg" alt="Best Seller 2">
+                    </a>
+                </div>
+                <p class="category-desc">Best Deals<br>Up to 30% off<br><b>Rs.899.00</b></p>
+                <a href="product.html?id=34" class="shop-btn">Shop Now</a>
+            </div>
+
+            <div class="category-card">
+                <h3>LOREAL SHAMPOO COMBOS</h3>
+                <div class="category-img-box">
+                    <a href="product.html?id=35">
+                        <img src="../Media\Best Seller Section\Lareal Sampoo Combo.jpeg" alt="Best Seller 3">
+                    </a>
+                </div>
+                <p class="category-desc">Haircare essentials!<br>Up to 40% off <br> <b>Rs.1,599.00</b></p>
+                <a href="product.html?id=35" class="shop-btn">Shop Now</a>
+            </div>
+
+            <div class="category-card">
+                <h3>CHANEL <br>PERFUME</h3>
+                <div class="category-img-box">
+                    <a href="product.html?id=36">
+                        <img src="../Media\Best Seller Section\Perfume Aesthetic.jpeg" alt="Best Seller 4">
+                    </a>
+                </div>
+                <p class="category-desc">bestsellers!<br>Up to 10% off<br><b>Rs.15,599.00</b></p>
+                <a href="product.html?id=36" class="shop-btn">Shop Now</a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h4>ABOUT US</h4>
+                <p>Nova Beauty is your ultimate destination for all things skincare, makeup, and fragrance. Discover your glow today!</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>CONTACT US</h4>
+                <p>+012(6372)823134</p>
+                <p>novabeauty@gmail.com</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>SOCIAL MEDIA</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook" style="color: #3b5998;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram" style="color: #e1306c;"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter" style="color: #1da1f2;"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+<script src="../Java/Cart.js"></script>
+</body>
+
+
+</html>

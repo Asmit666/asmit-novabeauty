@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodycare | Nova Beauty</title>
+    <link rel="icon" href="Media\Logos\BeautyWallah Logo.png">
+    <link rel="stylesheet" href="../CSS/Skincare_style.css">
+    <link rel="stylesheet" href="../CSS\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Story+Script&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <input type="checkbox" id="checkbox">
+        <label class="toggle" for="checkbox">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </label>
+        <div class="slide">
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-home"></i>Home</a></li>
+                <li><a href="Contact.html"><i class="fa-solid fa-envelope"></i>Contact Us</a></li>
+                <li><a href="index.html#categories-section"><i class="fa-solid fa-list"></i>Categories</a></li>
+                <li><a href="About.html"><i class="fa-solid fa-circle-info"></i>About</a></li>
+                <li><a href="Review.html"><i class="fa-solid fa-star"></i>Review</a></li>
+            </ul>../
+        </div>
+
+
+        <div class="bn">
+            <a href="index.html">
+                <img src="../Media\Logos\TextOnly.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="icon">
+            <label for="search-toggle" style="cursor: pointer;">
+                <i class="fa-solid fa-magnifying-glass" style="color: rgb(5, 51, 86);"></i>
+            </label>
+            <a href="Login.html"><i class="fa-solid fa-user" style="color: rgb(5, 51, 86);"></i></a>
+            <a href="cart.html" style="position: relative; display: inline-block; margin-right: 15px;">
+                <i class="fa-solid fa-cart-shopping" style="color: rgb(5, 51, 86);"></i>
+                <span id="cart-badge" style="position: absolute; top: -2px; right: -4px; background: rgb(241, 115, 136); color: white; border-radius: 50%; padding: 2px 6px; font-size: 10px; display: none;">0</span>
+            </a>
+            <a href="Wishlist.html"><i class="fa-solid fa-heart" style="color: rgb(245, 0, 0);"></i></a>
+        </div>
+    </header>
+    <input type="checkbox" id="search-toggle" class="search-checkbox">
+
+    <div class="search-overlay">
+        <label for="search-toggle" class="close-search">
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for makeup, skincare, deals...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+
+
+    <aside class="box">
+        <div class="main-slider-wrapper">
+
+            <input type="radio" name="main-slider" id="main-1">
+            <input type="radio" name="main-slider" id="main-2">
+            <input type="radio" name="main-slider" id="main-3">
+
+            <div class="main-slide main-img-1 relative-slide">
+                <img src="../Media\bodycare\b2.webp" alt="Beauty Banner 1" class="main-slider-img">
+                <label for="main-3" class="prev-arrow">&#10094;</label>
+                <label for="main-2" class="next-arrow">&#10095;</label>
+            </div>
+
+            <div class="main-slide main-img-2">
+                <img src="../Media\bodycare\banner2.jpg" alt="Beauty Banner 2" class="main-slider-img">
+                <label for="main-1" class="prev-arrow">&#10094;</label>
+                <label for="main-3" class="next-arrow">&#10095;</label>
+            </div>
+
+            <div class="main-slide main-img-3">
+                <img src="../Media\bodycare\b6.webp" alt="Beauty Banner 3" class="main-slider-img">
+                <label for="main-2" class="prev-arrow">&#10094;</label>
+                <label for="main-1" class="next-arrow">&#10095;</label>
+            </div>
+
+        </div>
+    </aside>
+
+
+    <section class="products-page-section">
+
+        <div class="products-header">
+            <h2>BODYCARE COLLECTION</h2>
+        </div>
+
+        <div class="products-grid">
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=69">
+                        <img src="../Media/bodycare/IMG-20260405-WA0057.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <h3>Tree Hut Cotton Candy Shea Sugar Scrub</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 1,299.00 <del>Rs. 3,599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Tree Hut Cotton Candy Sugar Scrub', 1299, '../Media/bodycare/IMG-20260405-WA0057.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Tree Hut Cotton Candy Sugar Scrub', 1299, '../Media/bodycare/IMG-20260405-WA0057.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=70">
+                        <img src="../Media/bodycare/IMG-20260405-WA0065.jpg" alt="Product 2">
+                    </a>
+                </div>
+                <h3>Sunday Rain Pink Grapefruit & Sea Salt Body Scrub 265g</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">Rs. 976.00 <del>Rs. 1,208.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Sunday Rain Pink Grapefruit Scrub', 976, '../Media/bodycare/IMG-20260405-WA0065.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Sunday Rain Pink Grapefruit Scrub', 976, '../Media/bodycare/IMG-20260405-WA0065.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=71">
+                        <img src="../Media/bodycare/dot&key sunscreen.webp" alt="Product 3">
+                    </a>
+                </div>
+                <h3>Watermelon Sunscreen Body Spray SPF 40+ PA+++ - 110ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 518.00 <del>Rs. 545.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Watermelon Sunscreen Body Spray', 518, '../Media/bodycare/dot&key sunscreen.webp')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Watermelon Sunscreen Body Spray', 518, '../Media/bodycare/dot&key sunscreen.webp')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=72">
+                        <img src="../Media/bodycare/IMG-20260407-WA0007.jpg" alt="Product 4">
+                    </a>
+                </div>
+                <h3>mCaffeine Sweet Escape Perfume Body Lotion|300ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">Rs. 3,644.00 <del>Rs. 4,235.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'mCaffeine Sweet Escape Body Lotion', 3644, '../Media/bodycare/IMG-20260407-WA0007.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('mCaffeine Sweet Escape Body Lotion', 3644, '../Media/bodycare/IMG-20260407-WA0007.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=73">
+                        <img src="../Media/bodycare/IMG-20260407-WA0006.jpg" alt="Product 5">
+                    </a>
+                </div>
+                <h3>Eden-Roc Moisturizing Lotion Hand and Body Lotion</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 11,617.00 <del>Rs. 13,599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Eden-Roc Moisturizing Lotion', 11617, '../Media/bodycare/IMG-20260407-WA0006.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Eden-Roc Moisturizing Lotion', 11617, '../Media/bodycare/IMG-20260407-WA0006.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=74">
+                        <img src="../Media/bodycare/IMG-20260407-WA0004.jpg" alt="Product 6">
+                    </a>
+                </div>
+                <h3>Skynfuture SymWhite 377 Brightening Body 200ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 2,231.00 <del>Rs. 3,799.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Skynfuture SymWhite 377 Emulsion', 2231, '../Media/bodycare/IMG-20260407-WA0004.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Skynfuture SymWhite 377 Emulsion', 2231, '../Media/bodycare/IMG-20260407-WA0004.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=75">
+                        <img src="../Media/bodycare/Chanel n01.png" alt="Product 7">
+                    </a>
+                </div>
+                <h3>N°1 DE CHANEL Revitalising Serum (100ml)</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 6,975.00 <del>Rs. 7,599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'N°1 DE CHANEL Revitalising Serum', 6975, '../Media/bodycare/Chanel n01.png')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('N°1 DE CHANEL Revitalising Serum', 6975, '../Media/bodycare/Chanel n01.png')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=76">
+                        <img src="../Media/bodycare/warm vanilla sugar .jpg" alt="Product 8">
+                    </a>
+                </div>
+                <h3>Warm Vanilla Sugar Body Wash</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 2,099.00 <del>Rs. 2,699.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Warm Vanilla Sugar Body Wash', 2099, '../Media/bodycare/warm vanilla sugar .jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Warm Vanilla Sugar Body Wash', 2099, '../Media/bodycare/warm vanilla sugar .jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=77">
+                        <img src="../Media/bodycare/soap2.webp" alt="Product 9">
+                    </a>
+                </div>
+                <h3>Neem Herbal Soap - Antifungal & Antibacterial Soap</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 219.00 <del>Rs. 222.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Neem Herbal Soap', 219, '../Media/bodycare/soap2.webp')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Neem Herbal Soap', 219, '../Media/bodycare/soap2.webp')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=78">
+                        <img src="../Media/bodycare/IMG-20260406-WA0012.jpg" alt="Product 10">
+                    </a>
+                </div>
+                <h3>PARIS-RIVIERA Shower Gel</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 7,468.00 <del>Rs. 8,499.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'PARIS-RIVIERA Shower Gel', 7468, '../Media/bodycare/IMG-20260406-WA0012.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('PARIS-RIVIERA Shower Gel', 7468, '../Media/bodycare/IMG-20260406-WA0012.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=79">
+                        <img src="../Media/bodycare/IMG-20260406-WA0009.jpg" alt="Product 11">
+                    </a>
+                </div>
+                <h3>Bath and Body Works-295 ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 1,448.00 <del>Rs. 2,099.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'A Thousand Wishes Body Wash', 1448, '../Media/bodycare/IMG-20260406-WA0009.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('A Thousand Wishes Body Wash', 1448, '../Media/bodycare/IMG-20260406-WA0009.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=80">
+                        <img src="../Media/bodycare/IMG-20260406-WA0005.jpg" alt="Product 12">
+                    </a>
+                </div>
+                <h3>DIOR Sauvage Shower Gel (250ml)</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 5,800.00 <del>Rs. 5,999.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'DIOR Sauvage Shower Gel', 5800, '../Media/bodycare/IMG-20260406-WA0005.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('DIOR Sauvage Shower Gel', 5800, '../Media/bodycare/IMG-20260406-WA0005.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=81">
+                        <img src="../Media/bodycare/IMG-20260405-WA0091.jpg" alt="Product 13">
+                    </a>
+                </div>
+                <h3>Peppermint Essential Body Oil-For Dry Skin Moisturizing 120ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 650.00 <del>Rs. 719.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Peppermint Essential Body Oil', 650, '../Media/bodycare/IMG-20260405-WA0091.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Peppermint Essential Body Oil', 650, '../Media/bodycare/IMG-20260405-WA0091.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=82">
+                        <img src="../Media/bodycare/m caffein.webp" alt="Product 14">
+                    </a>
+                </div>
+                <h3>mCaffeine 5% Niacinamid Blues Perfume Body Lotion 300ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 449.00 <del>Rs. 599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'mCaffeine Body Lotion', 449, '../Media/bodycare/m caffein.webp')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('mCaffeine Body Lotion', 449, '../Media/bodycare/m caffein.webp')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=83">
+                        <img src="../Media/bodycare/soap1.webp" alt="Product 15">
+                    </a>
+                </div>
+                <h3>Sunset Waves Spa Bar - Handmade Lavender Rose Soap</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 415.00 <del>Rs. 420.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Sunset Waves Spa Bar', 415, '../Media/bodycare/soap1.webp')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Sunset Waves Spa Bar', 415, '../Media/bodycare/soap1.webp')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=84">
+                        <img src="../Media/bodycare/sunscreen.webp" alt="Product 16">
+                    </a>
+                </div>
+                <h3>SunScoop Niacinamide Sunscreen 45ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 646.00 <del>Rs. 998.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'SunScoop Niacinamide Sunscreen', 646, '../Media/bodycare/sunscreen.webp')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('SunScoop Niacinamide Sunscreen', 646, '../Media/bodycare/sunscreen.webp')">ORDER NOW</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h4>ABOUT US</h4>
+                <p>Nova Beauty is your ultimate destination for all things skincare, makeup, and fragrance. Discover your glow today!</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>CONTACT US</h4>
+                <p>+012(6372)823134</p>
+                <p>novabeauty@gmail.com</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>SOCIAL MEDIA</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook" style="color: #3b5998;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram" style="color: #e1306c;"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter" style="color: #1da1f2;"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="../Java/Cart.js"></script>
+</body>
+
+</html>

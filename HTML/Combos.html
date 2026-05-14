@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combos | Nova Beauty</title>
+    <link rel="icon" href="Media\Logos\BeautyWallah Logo.png">
+    <link rel="stylesheet" href="../CSS/Skincare_style.css">
+    <link rel="stylesheet" href="../CSS\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Story+Script&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <input type="checkbox" id="checkbox">
+        <label class="toggle" for="checkbox">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </label>
+        <div class="slide">
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-home"></i>Home</a></li>
+                <li><a href="Contact.html"><i class="fa-solid fa-envelope"></i>Contact Us</a></li>
+                <li><a href="index.html#categories-section"><i class="fa-solid fa-list"></i>Categories</a></li>
+                <li><a href="About.html"><i class="fa-solid fa-circle-info"></i>About</a></li>
+                <li><a href="Review.html"><i class="fa-solid fa-star"></i>Review</a></li>
+            </ul>
+        </div>
+
+
+        <div class="bn">
+            <a href="index.html">
+                <img src="../Media\Logos\TextOnly.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="icon">
+            <label for="search-toggle" style="cursor: pointer;">
+                <i class="fa-solid fa-magnifying-glass" style="color: rgb(5, 51, 86);"></i>
+            </label>
+            <a href="Login.html"><i class="fa-solid fa-user" style="color: rgb(5, 51, 86);"></i></a>
+            <a href="cart.html" style="position: relative; display: inline-block; margin-right: 15px;">
+                <i class="fa-solid fa-cart-shopping" style="color: rgb(5, 51, 86);"></i>
+                <span id="cart-badge" style="position: absolute; top: -2px; right: -4px; background: rgb(241, 115, 136); color: white; border-radius: 50%; padding: 2px 6px; font-size: 10px; display: none;">0</span>
+            </a>
+            <a href="Wishlist.html"><i class="fa-solid fa-heart" style="color: rgb(245, 0, 0);"></i></a>
+        </div>
+    </header>
+    <input type="checkbox" id="search-toggle" class="search-checkbox">
+
+    <div class="search-overlay">
+        <label for="search-toggle" class="close-search">
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for makeup, skincare, deals...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+
+
+    <aside class="box">
+        <div class="main-slider-wrapper">
+
+            <input type="radio" name="main-slider" id="main-1">
+            <input type="radio" name="main-slider" id="main-2">
+            <input type="radio" name="main-slider" id="main-3">
+
+            <div class="main-slide main-img-1 relative-slide">
+                <img src="../Media\Banner\banner combo2.jpg" alt="Beauty Banner 1" class="main-slider-img">
+                <label for="main-3" class="prev-arrow">&#10094;</label>
+                <label for="main-2" class="next-arrow">&#10095;</label>
+            </div>
+
+            <div class="main-slide main-img-2">
+                <img src="../Media\Banner\banner3.webp" alt="Beauty Banner 2" class="main-slider-img">
+                <label for="main-1" class="prev-arrow">&#10094;</label>
+                <label for="main-3" class="next-arrow">&#10095;</label>
+            </div>
+
+            <div class="main-slide main-img-3">
+                <img src="../Media\Banner\banner4.webp" alt="Beauty Banner 3" class="main-slider-img">
+                <label for="main-2" class="prev-arrow">&#10094;</label>
+                <label for="main-1" class="next-arrow">&#10095;</label>
+            </div>
+
+        </div>
+    </aside>
+
+
+    <section class="products-page-section">
+
+        <div class="products-header">
+            <h2>COMBOS COLLECTION</h2>
+        </div>
+
+        <div class="products-grid">
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=85">
+                        <img src="../Media/bodycare 1/Rose-Royale-combo.webp" alt="Product 1">
+                    </a>
+                </div>
+                <h3>Brillare Rose Royale Gift Box </h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 1,650.00 <del>Rs. 2,599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Brillare Rose Royale Gift Box', 1650, '../Media/bodycare 1/Rose-Royale-combo.webp')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Brillare Rose Royale Gift Box', 1650, '../Media/bodycare 1/Rose-Royale-combo.webp')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=86">
+                        <img src="../Media/perfume/Coco Chanel +N'5 chanel.jpeg" alt="Product 2">
+                    </a>
+                </div>
+                <h3>Coco Chanel & Chanel N°5 Parfum </h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">Rs. 39,889.00 <del>Rs. 40,299.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Coco Chanel & Chanel N°5 Combo', 39889, '../Media/perfume/Coco Chanel +N\'5 chanel.jpeg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Coco Chanel & Chanel N°5 Combo', 39889, '../Media/perfume/Coco Chanel +N\'5 chanel.jpeg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=87">
+                        <img src="../Media/makeup/Dior Faundation Combo (3 Shade).jpeg" alt="Product 3">
+                    </a>
+                </div>
+                <h3>Forever Clean Matte Foundation - 30ml(3 shades)</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 15,342.00 <del>Rs. 15,798.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Forever Clean Matte Foundation Trio', 15342, '../Media/makeup/Dior Faundation Combo (3 Shade).jpeg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Forever Clean Matte Foundation Trio', 15342, '../Media/makeup/Dior Faundation Combo (3 Shade).jpeg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=88">
+                        <img src="../Media/makeup/Dior Lipstick Combo.webp" alt="Product 4">
+                    </a>
+                </div>
+                <h3>DIOR ADDICT LIPSTICK SET</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">Rs. 15,899.00 <del>Rs. 16,198.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'DIOR ADDICT LIPSTICK SET', 15899, '../Media/makeup/Dior Lipstick Combo.webp')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('DIOR ADDICT LIPSTICK SET', 15899, '../Media/makeup/Dior Lipstick Combo.webp')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=89">
+                        <img src="../Media/makeup/Facescanada Eye Liner+Mascara COmbo.jpg" alt="Product 5">
+                    </a>
+                </div>
+                <h3>FACES CANADA Black Eyeliner & Dramatic Black Mascara</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 450.00 <del>Rs. 599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'FACES CANADA Eyeliner & Mascara', 450, '../Media/makeup/Facescanada Eye Liner+Mascara COmbo.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('FACES CANADA Eyeliner & Mascara', 450, '../Media/makeup/Facescanada Eye Liner+Mascara COmbo.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=90">
+                        <img src="../Media/haircare/Matrix shampoo, conditioner, and split-end serum.jpeg" alt="Product 6">
+                    </a>
+                </div>
+                <h3>EETMA JVM Matrix Complete Hair Care Combo</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 2,150.00 <del>Rs. 2,799.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Matrix Opti Care Hair Combo', 2150, '../Media/haircare/Matrix shampoo, conditioner, and split-end serum.jpeg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Matrix Opti Care Hair Combo', 2150, '../Media/haircare/Matrix shampoo, conditioner, and split-end serum.jpeg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=91">
+                        <img src="../Media/perfume/Swiss beauty combo.jpg" alt="Product 7">
+                    </a>
+                </div>
+                <h3>Luxury Perfume Trio</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 1,699.00 <del>Rs. 1,999.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Luxury Perfume Trio', 1699, '../Media/perfume/Swiss beauty combo.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Luxury Perfume Trio', 1699, '../Media/perfume/Swiss beauty combo.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=92">
+                        <img src="../Media/haircare/Wow hair oil+shampoo+conditioner.jpg" alt="Product 8">
+                    </a>
+                </div>
+                <h3>Onion Black Seed Oil Shampoo & Conditioner Set</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 9,969.00 <del>Rs. 10,199.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Onion Black Seed Oil Treatment Set', 9969, '../Media/haircare/Wow hair oil+shampoo+conditioner.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Onion Black Seed Oil Treatment Set', 9969, '../Media/haircare/Wow hair oil+shampoo+conditioner.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=93">
+                        <img src="../Media/makeup/Maybelline Eye Shadow+Kajal COmbo.webp" alt="Product 9">
+                    </a>
+                </div>
+                <h3>Maybelline Lasting Drama Gel Eyeliner Set</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 1,055.00 <del>Rs. 1,599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Maybelline Eyeliner & Palette Set', 1055, '../Media/makeup/Maybelline Eye Shadow+Kajal COmbo.webp')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Maybelline Eyeliner & Palette Set', 1055, '../Media/makeup/Maybelline Eye Shadow+Kajal COmbo.webp')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=94">
+                        <img src="../Media/makeup/Pixi Blush Combo.jpeg" alt="Product 10">
+                    </a>
+                </div>
+                <h3>LILLYAMOR HD On-the-Go Makeup Blush Stick Set</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 1,948.00 <del>Rs. 2,599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'LILLYAMOR HD Blush Stick Set', 1948, '../Media/makeup/Pixi Blush Combo.jpeg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('LILLYAMOR HD Blush Stick Set', 1948, '../Media/makeup/Pixi Blush Combo.jpeg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=95">
+                        <img src="../Media/makeup/Suroskie Face Creams Combo.jpeg" alt="Product 11">
+                    </a>
+                </div>
+                <h3>GLOW CAPSULE COMBO ( TRIPLE C + SPOTLESS TXA )</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 1,399.00 <del>Rs. 3,199.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'GLOW CAPSULE COMBO', 1399, '../Media/makeup/Suroskie Face Creams Combo.jpeg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('GLOW CAPSULE COMBO', 1399, '../Media/makeup/Suroskie Face Creams Combo.jpeg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=96">
+                        <img src="../Media/makeup/Suroskie Facewash+Perfume.jpg" alt="Product 12">
+                    </a>
+                </div>
+                <h3>Gluta Boost Facewash Mix & Match Combo</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 1,649.00 <del>Rs. 3,798.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Gluta Boost Facewash Combo', 1649, '../Media/makeup/Suroskie Facewash+Perfume.jpg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Gluta Boost Facewash Combo', 1649, '../Media/makeup/Suroskie Facewash+Perfume.jpg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=97">
+                        <img src="../Media/makeup/Suroskie Moisturizer+Toner.jpeg" alt="Product 13">
+                    </a>
+                </div>
+                <h3>Suroskie Sunscreen - SPF 30 Glow Up Juice SPF 35</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 1,299.00 <del>Rs. 2,599.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Suroskie Sunscreen Combo', 1299, '../Media/makeup/Suroskie Moisturizer+Toner.jpeg')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Suroskie Sunscreen Combo', 1299, '../Media/makeup/Suroskie Moisturizer+Toner.jpeg')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=98">
+                        <img src="../Media/Skincare/EverDIva LipGloss Combo.webp" alt="Product 14">
+                    </a>
+                </div>
+                <h3>Everdiva Set Of 2 Non-Sticky Hydrating Lip Gloss</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 313.00 <del>Rs. 399.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Everdiva Hydrating Lip Gloss Set', 313, '../Media/Skincare/EverDIva LipGloss Combo.webp')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Everdiva Hydrating Lip Gloss Set', 313, '../Media/Skincare/EverDIva LipGloss Combo.webp')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=99">
+                        <img src="../Media/Skincare/lipstick combo.webp" alt="Product 15">
+                    </a>
+                </div>
+                <h3>MARS Matte Box Set of 3 Lipsticks for Women</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 948.00 <del>Rs. 1,199.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'MARS Matte Lipstick Box Set', 948, '../Media/Skincare/lipstick combo.webp')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('MARS Matte Lipstick Box Set', 948, '../Media/Skincare/lipstick combo.webp')">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <a href="product.html?id=100">
+                        <img src="../Media/makeup/dior combo2.webp" alt="Product 16">
+                    </a>
+                </div>
+                <h3>Dior Addict Lip Essentials Gift Set – Glow & Maximizer Trio</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="price">Rs. 3,650.00 <del>Rs. 5,999.00</del></p>
+                <div class="button-group">
+                    <a class="btn-cart" style="cursor: pointer;" onclick="addToCart(this, 'Dior Addict Lip Essentials Gift Set', 3650, '../Media/makeup/dior combo2.webp')">ADD TO CART</a>
+                    <a class="btn-buy" style="cursor: pointer;" onclick="orderNow('Dior Addict Lip Essentials Gift Set', 3650, '../Media/makeup/dior combo2.webp')">ORDER NOW</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h4>ABOUT US</h4>
+                <p>Nova Beauty is your ultimate destination for all things skincare, makeup, and fragrance. Discover your glow today!</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>CONTACT US</h4>
+                <p>+012(6372)823134</p>
+                <p>novabeauty@gmail.com</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>SOCIAL MEDIA</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook" style="color: #3b5998;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram" style="color: #e1306c;"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter" style="color: #1da1f2;"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="../Java/Cart.js"></script>
+</body>
+
+</html>

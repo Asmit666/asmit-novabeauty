@@ -1,0 +1,133 @@
+ .login-section {
+     padding: 80px 5%;
+     background-color: #fdfafb;
+     min-height: 70vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .login-container {
+     background: white;
+     max-width: 450px;
+     width: 100%;
+     padding: 40px;
+     border-radius: 20px;
+     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+     text-align: center;
+ }
+
+ .login-container h2 {
+     font-family: 'Modern Antiqua', serif;
+     color: #111;
+     font-size: 2.2rem;
+     margin-bottom: 10px;
+ }
+
+ .login-container p {
+     color: #777;
+     font-family: Arial, sans-serif;
+     margin-bottom: 30px;
+     font-size: 0.95rem;
+ }
+
+ .input-group {
+     margin-bottom: 20px;
+     text-align: left;
+ }
+
+ .input-group label {
+     display: block;
+     font-family: Arial, sans-serif;
+     color: #333;
+     margin-bottom: 8px;
+     font-weight: bold;
+     font-size: 0.9rem;
+ }
+
+ .input-group input {
+     width: 100%;
+     padding: 12px 15px;
+     border: 1px solid #ddd;
+     border-radius: 25px;
+     font-size: 1rem;
+     outline: none;
+     transition: 0.3s;
+ }
+
+ .input-group input:focus {
+     border-color: rgb(141, 87, 141);
+     box-shadow: 0px 0px 5px rgba(141, 87, 141, 0.2);
+ }
+
+ .password-wrapper {
+     position: relative;
+ }
+
+ .password-wrapper input {
+     padding-right: 40px;
+ }
+
+ #togglePassword {
+     position: absolute;
+     right: 15px;
+     top: 50%;
+     transform: translateY(-50%);
+     cursor: pointer;
+     color: #777;
+     transition: color 0.3s;
+ }
+
+ #togglePassword:hover {
+     color: rgb(141, 87, 141);
+ }
+
+ .forgot-password {
+     display: block;
+     text-align: right;
+     margin-top: -10px;
+     margin-bottom: 25px;
+     font-size: 0.85rem;
+     color: rgb(241, 115, 136);
+     text-decoration: none;
+     font-family: Arial, sans-serif;
+ }
+
+ .forgot-password:hover {
+     text-decoration: underline;
+ }
+
+ .login-btn {
+     width: 100%;
+     background: rgb(141, 87, 141);
+     color: white;
+     border: none;
+     padding: 15px;
+     border-radius: 25px;
+     font-size: 1.1rem;
+     font-weight: bold;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+
+ .login-btn:hover {
+     background: rgb(110, 65, 110);
+     box-shadow: 0px 5px 15px rgba(141, 87, 141, 0.3);
+ }
+
+ .signup-link {
+     margin-top: 25px;
+     font-family: Arial, sans-serif;
+     color: #555;
+     font-size: 0.95rem;
+ }
+
+ .signup-link a {
+     color: rgb(141, 87, 141);
+     font-weight: bold;
+     text-decoration: none;
+ }
+
+ .signup-link a:hover {
+     text-decoration: underline;
+ }

@@ -1,0 +1,198 @@
+.pro-details-section {
+    width: 100%;
+    background-color: white;
+    padding: 60px 5%;
+}
+
+.pro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.pro-image-col {
+    flex: 1;
+    background-color: rgb(248, 221, 226);
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.main-pro-img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.main-pro-img:hover {
+    transform: scale(1.1);
+}
+
+.pro-info-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    color: rgb(141, 87, 141);
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.pro-title {
+    font-family: "Modern Antiqua", serif;
+    font-size: 2.5rem;
+    color: #2c2c2c;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.pro-stars {
+    color: #f39c12;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.pro-stars span {
+    color: #777;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+/* Pricing Row */
+.pro-pricing {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.current-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #111;
+}
+
+.old-price {
+    font-size: 1.2rem;
+    color: #999;
+}
+
+.discount-badge {
+    background-color: rgb(241, 115, 136);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.pro-description {
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Quantity Input */
+.quantity-selector {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.quantity-selector label {
+    font-weight: bold;
+    color: #333;
+}
+
+.quantity-selector input {
+    width: 60px;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+}
+
+.quantity-selector input:focus {
+    border-color: rgb(141, 87, 141);
+}
+
+
+.pro-action-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn-mega-cart,
+.btn-mega-buy {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.btn-mega-cart {
+    color: rgb(141, 87, 141);
+    background-color: white;
+    border: 2px solid rgb(141, 87, 141);
+}
+
+.btn-mega-cart:hover {
+    background-color: rgb(141, 87, 141);
+    color: white;
+}
+
+.btn-mega-buy {
+    color: white;
+    background-color: rgb(141, 87, 141);
+    border: 2px solid rgb(141, 87, 141);
+}
+
+.btn-mega-buy:hover {
+    background-color: rgb(241, 115, 136);
+    border-color: rgb(241, 115, 136);
+    box-shadow: 0 5px 15px rgba(241, 115, 136, 0.4);
+}
+
+
+.pro-perks {
+    list-style: none;
+    padding: 0;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.pro-perks li {
+    margin-bottom: 15px;
+    color: #444;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pro-perks li i {
+    color: rgb(141, 87, 141);
+    font-size: 1.2rem;
+}
